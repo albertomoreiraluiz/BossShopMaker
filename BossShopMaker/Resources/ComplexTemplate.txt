@@ -1,0 +1,32 @@
+  {SHOP_ITEM}:
+    MenuItem:
+    - type:{ITEM_TYPE}
+    - amount:1
+    - name:&9%material%
+    - 'lore1:'
+    - 'lore2:&eClick &2esquerdo &epara comprar &b%reward% &epor &c%price%&e.'
+    - 'lore3:&eClick &2direito &epara vender &c%price_right% &epor &b%reward_right%&e.'
+    - 'lore4:&eShift + &2Click direito &epara vender todos.'
+    RewardType: ITEM
+    Reward:
+    - - type:{ITEM_TYPE}
+      - amount:1
+    PriceType: MONEY
+    Price: {BUY_PRICE}
+    Message: '&eVocê comprou %reward%! Saldo restante: &c%left%'
+    RewardType_right: MONEY
+    Reward_right: {SELL_PRICE}
+    PriceType_right: ITEM
+    Price_right:
+    - - type:{ITEM_TYPE}
+      - amount:1
+    Message_right: '&eVocê vendeu %price_right%!  Saldo: &c%balance%'
+    RewardType_shift_right: MONEY
+    Reward_shift_right: {SELL_PRICE}
+    PriceType_shift_right: ITEMALL
+    Price_shift_right:
+    - type:{ITEM_TYPE}
+    - amount:1
+    Message_shift_right: '&eVocê vendeu %price_shift_right%!  Saldo: &c%balance%'
+    ExtraPermission: ''
+    InventoryLocation: {SHOP_SLOT}

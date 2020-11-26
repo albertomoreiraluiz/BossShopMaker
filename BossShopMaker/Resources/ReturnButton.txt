@@ -1,0 +1,12 @@
+  Back:
+    MenuItem:
+    - lore:&8Voltar para o Menu
+    - name:&cBack
+    - amount:1
+    - type:REDSTONE
+    RewardType: SHOP
+    Reward: menu
+    PriceType: NOTHING
+    Message: ''
+    ExtraPermission: ''
+    InventoryLocation: {PAGE_COUNT}

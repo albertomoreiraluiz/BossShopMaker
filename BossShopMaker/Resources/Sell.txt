@@ -1,0 +1,24 @@
+  {SHOP_ITEM}:
+    MenuItem:
+    - type:{ITEM_TYPE}
+    - amount:1
+    - name:&9%material%
+    - 'lore1:'
+    - 'lore2:&eClick &2esquerdo &epara vender &b%price% &epor &c%reward%&e.'
+    - 'lore3:&eShift + &2Click direito &epara vender todos.'
+    RewardType: MONEY
+    Reward: {SELL_PRICE}
+    PriceType: ITEM
+    Price:
+    - - type:{ITEM_TYPE}
+      - amount:1
+    Message: '&eVocê vendeu %price%!  Saldo: &c%balance%'
+    RewardType_shift_right: MONEY
+    Reward_shift_right: {SELL_PRICE}
+    PriceType_shift_right: ITEMALL
+    Price_shift_right:
+    - type:{ITEM_TYPE}
+    - amount:1
+    Message_shift_right: '&eVocê vendeu %price_shift_right%!  Saldo: &c%balance%'
+    ExtraPermission: ''
+    InventoryLocation: {SHOP_SLOT}
